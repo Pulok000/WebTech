@@ -1,0 +1,9 @@
+body{
+	background-color:rgb(240, 240, 240);
+}
+h1{
+	color: blue;
+}
+
+p.detail {color: red;}
+span.name { color: black; }
