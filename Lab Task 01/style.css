@@ -4,6 +4,13 @@ body{
 h1{
 	color: blue;
 }
+.block {
+  background: white;
 
+  height: 10px;
+width: 1200px;
+}
 p.detail {color: red;}
 span.name { color: black; }
+span.name2{color:rgb(106,106,106);}
+label.f {color: red;}
