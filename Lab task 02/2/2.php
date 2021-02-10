@@ -25,7 +25,7 @@
 	if($_SERVER["REQUEST_METHOD"]=="POST")
 	{
 
-		$check=$_POST["fname"];
+		$check=$_POST["femail"];
 		$j=str_word_count($check,0);
 
 
@@ -41,7 +41,7 @@
 		}
 		else
 		{
-				$name=test_input($_POST["fname"]);
+				$name=$check;
 		}
 
 
@@ -65,7 +65,7 @@
 	<legend><h3>Email</h3></legend> 
 
 	<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?> ">
-		<input type="text" name="fname">
+		<input type="text" name="femail">
 		<span class="error"><?php echo $errname;?></span>
 		<hr align=center  size=1>
 		<input type="submit" name="fsubmit" value="Submit">
