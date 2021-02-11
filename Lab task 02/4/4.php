@@ -23,10 +23,7 @@
 	if($_SERVER["REQUEST_METHOD"]=="POST")
 	{
 
-		//$male=$_POST["fmale"];
-		//$female=$_POST["ffemale"];
-		//$other=$_POST["fother"];
-		
+
 
 
 		if(empty($_POST["fmale"]) && empty($_POST["ffemale"]) && empty($_POST["fother"]))
@@ -84,17 +81,10 @@
 
 
 </fieldset>
+
+
 <?php
-
-
-
 echo $result;
-
-
-
-
-
-
 ?>
 
 </body>
