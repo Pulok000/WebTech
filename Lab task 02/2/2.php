@@ -41,7 +41,8 @@
 		}
 		else
 		{
-				$name=$check;
+			$name=test_input($_POST["femail"]);
+				
 		}
 
 

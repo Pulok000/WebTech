@@ -16,30 +16,30 @@
 <?php
 
 	
-	//$male=$female=$other=$result=$err="";
+	$male=$female=$other=$result=$err="";
 
 	
 
 	if($_SERVER["REQUEST_METHOD"]=="POST")
 	{
 
-		$male=$_POST["fmale"];
-		$female=$_POST["ffemale"];
-		$other=$_POST["fother"];
+		//$male=$_POST["fmale"];
+		//$female=$_POST["ffemale"];
+		//$other=$_POST["fother"];
 		
 
 
-		if(empty($male) && empty($female) && empty($other))
+		if(empty($_POST["fmale"]) && empty($_POST["ffemale"]) && empty($_POST["fother"]))
 		{
 			$err="* You must select your gender";
 		}
 		else
 		{
-			if(empty($male) && empty($female) )
+			if(empty($_POST["fmale"]) && empty($_POST["ffemale"]) )
 			{
 				$result="Other";
 			}
-			else if(empty($male) && empty($other))
+			else if(empty($_POST["fmale"]) && empty($_POST["fother"]))
 			{
 				$result="Female";
 			}
