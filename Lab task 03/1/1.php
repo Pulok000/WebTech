@@ -130,7 +130,9 @@
 
 //if($flag)
 //{
-	echo $name;
+	echo "$name  <br>";
+
+	echo $pass;
 //}
 
 
