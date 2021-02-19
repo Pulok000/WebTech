@@ -13,8 +13,13 @@
                           <tr>  
                                <th>name</th> 
                                <th>email</th>  
-                               <th>username</th>
-                               <th>Password</th>   
+                               <th>userName</th> 
+                               <th>password</th>   
+                               <th>gender</th> 
+
+                                <th>Date of Birth</th> 
+
+                               
                           </tr>  
                           <?php   
                           $data = file_get_contents("data.json");  
@@ -26,7 +31,8 @@
                                <td>'.$row["email"].'</td>
                                <td>'.$row["userName"].'</td>
                                <td>'.$row["password"].'</td>
-
+                               <td>'.$row["gender"].'</td>
+                               <td>'.$row["dob"].'</td>
                                </tr>';  
                           }  
                           ?>  
