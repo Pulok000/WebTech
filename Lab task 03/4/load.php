@@ -7,7 +7,8 @@
            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
       </head>  
       <body>  
-        <div class="container" style="width:500px;">              
+        <br>
+        <div class="container" style="width:800px;">              
                 <div class="table-responsive"> 
                      <table class="table table-bordered">  
                           <tr>  
