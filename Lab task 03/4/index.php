@@ -31,11 +31,38 @@
 <body>
 
 
+<?php
+
+            if(file_exists('data.json'))  
+           {  
+                $current_data = file_get_contents('data.json');  
+                $array_data = json_decode($current_data, true);  
+                $extra = array(  
+                     'name'               =>     $_POST['fname'],  
+                     'email'          =>     $_POST["femail"],  
+                     'userName'     =>     $_POST["fusername"],
+                     'password'     =>     $_POST["fcpassword"]
+                 
+                );
+                $array_data[] = $extra;  
+                $final_data = json_encode($array_data);  
+                if(file_put_contents('data.json', $final_data))  
+                {  
+                     $message = "File Appended Success fully";  
+                }  
+                else  
+                {  
+                $error = 'JSON File not exits';  
+                }  
+
+              }
+
+
+?>
+
+
+
 <div id="page" >
-  
-
-
-
 
 <fieldset style="width:500px">
   <legend><h3>REGISTRATION</h3></legend> 
@@ -69,7 +96,7 @@
  <input type="radio" name="ffemale">Female
 <input type="radio" name="fother"> Other
 <hr align=center  size=1>
-<input type="submit" name="fsubmit" value="Submit">
+
 <!-- <span class="error"><?php echo $err;?></span> -->
 </form>
 
@@ -86,7 +113,7 @@
   <input type="text" name="fmm" value="mm" size="1"> <span>/</span>
   <input type="text" name="fyy" value="yyyy" size="1">
 <hr align=center  size=1>
-<input type="submit" name="fsubmit" value="Submit">
+
 <!-- <span class="error"><?php echo $errname;?></span> -->
 
 </form>
@@ -94,16 +121,22 @@
 
 
    
-    <input type="submit" name="fsubmit" value="Submit">
+    <input type="submit" name="ftsubmit" value="Submit">
     
   </form>
 
 </fieldset>
-
-
 </div>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
-
-
