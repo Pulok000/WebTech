@@ -11,10 +11,23 @@
 
 			<div id="headerBarDiv"> 
 
-				<p style="display: inline;">Logged in as</p>
+				
 
-					<a href="home.php ">Bob |</a>
-					<a href="login.php">LogOut |</a>
+					
+					
+					<?php
+						session_start();
+					$user='Logged In as <a href=loggedInDashboard.php>'. $_SESSION["fname"]. '</a>';
+
+
+					 echo $user; 
+				
+
+					 ?>
+
+
+			
+					<a href="login.php">| LogOut</a>
 					
 
 			</div> 

@@ -137,12 +137,13 @@
 
 
 <?php
-
+session_start();
+$_SESSION["fname"] = $name;
 //if($flag)
 //{
-	echo "$name  <br>";
+//	echo "$name  <br>";
 
-	echo $pass;
+	//echo $pass;
 //}
 
 

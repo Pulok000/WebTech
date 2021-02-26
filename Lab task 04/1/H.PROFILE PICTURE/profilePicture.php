@@ -1,6 +1,4 @@
 
-
-
 <div id="containersDiv">
 			<div >
 				<?php include ('header2.php');?>
@@ -18,20 +16,8 @@
 
 			<div id="content">
 
-			<br>
-
-
-
-
-
-					<?php
-					
-
-
-					echo 'Welcome ' . $_SESSION["fname"] .'';
-					?>
-
-					<!-- &nbsp 	<p><b>&nbsp&nbsp&nbsp&nbsp Welcome Bob</b></p> -->
+			
+					<?php include ('2.php');?>
 			</div>
 
 
