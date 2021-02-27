@@ -1,3 +1,12 @@
+<?php
+// Start the session
+session_start();
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -101,6 +110,17 @@
   }
 
 
+
+// Set session variables
+$_SESSION["fname"] =$name;
+// echo "Session variables are set.";
+
+
+
+
+
+
+
   //<!-- FOR email -->
 
   $flag2=TRUE;
@@ -129,12 +149,13 @@
     else
     {
       $email=test_input($_POST["femail"]);
+
+      $_SESSION["femail"] =$email;
         
     }
 
 
   }
-
 
 
 
@@ -289,6 +310,7 @@ $result=$err6="";
       }
       
     }
+    $_SESSION["fgender"] =$result;
 
   
 //<!-- FOR DOB -->
@@ -357,6 +379,9 @@ $flag7=true;
     if($flag7)
     {
       $dob=$dd."/".$mm."/".$yy;
+
+        $_SESSION["fdob"] =$dob;
+
      }
   }
 

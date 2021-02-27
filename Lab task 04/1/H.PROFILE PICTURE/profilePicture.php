@@ -17,7 +17,7 @@
 			<div id="content">
 
 			
-					<?php include ('2.php');?>
+					<?php include ('index.php');?>
 			</div>
 
 

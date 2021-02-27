@@ -22,8 +22,13 @@
 
 
 <?php
+ session_start();
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+
+$_SESSION['picture'] = $target_file;
+
+
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
@@ -78,7 +83,7 @@ if ($uploadOk == 0) {
 
 
 
-<fieldset style="width:400px; height: 200px ">
+<fieldset style="width:400px; height: 300px ">
 	<legend><h3>Profile Picture</h3></legend> 
 
 	<form method="POST"  enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
