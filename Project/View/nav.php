@@ -10,11 +10,12 @@
 <hr>
 <ul>
   <li><a href="loggedInDashboard.php">Dashbord</a></li>
-  <li><a href="#news">View Profile</a></li>
-  <li><a href="#contact">Edit Profile</a></li>
-  <li><a href="#about">Change profile picture</a></li>
-  <li><a href="#about">Change Password</a></li>
-  <li><a href="#about">LogOut</a></li>
+    <li><a href="SellProduct.php">Sell Product</a></li>
+  <li><a href="viewProfile.php">View Profile</a></li>
+  <li><a href="editProfile.php">Edit Profile</a></li>
+  <li><a href="changeProfilePicture.php">Change profile picture</a></li>
+  <li><a href="changePassword.php">Change Password</a></li>
+  <li><a href="home.php">LogOut</a></li>
 </ul>
 
 
