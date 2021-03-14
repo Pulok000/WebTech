@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Header File</title>
 <!-- 
 <style type="text/css">
 	
@@ -37,18 +37,25 @@
 </style> -->
 
 
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
 
 </head>
 <body>
 		<div id="headerDiv">
-				<img src="logo.png" style="display: inline;">
+				<img src="../logo.png" style="display: inline;">
 
 			<div id="headerBarDiv"> 
 
-					<a href="home.php ">home |</a>
-					<a href="login.php">Login |</a>
-					<a href="registration.php"">Registration</a>
+
+<!-- <a href="A.PUBLIC HOME/home.php">home |</a>
+<a href = "/C.LOGIN/login.php">Login |</a>
+<a href="/B.REGISTRATION/registration.php">Registration</a>
+ -->
+
+					<a href="../A.PUBLIC HOME/home.php">home |</a>
+					<a href = "../C.LOGIN/login.php">Login |</a>
+					<a href="../B.REGISTRATION/registration.php"">Registration</a>
+
 
 			</div> 
 

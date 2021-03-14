@@ -6,7 +6,7 @@
 <body ">
 
 <!-- style="width: 300px;border-style: solid; border-width: thin; -->
-<p><b> &nbsp Account</b></p>
+<p><b> &nbsp Seller's Account</b></p>
 <hr>
 <ul>
   <li><a href="loggedInDashboard.php">Dashbord</a></li>

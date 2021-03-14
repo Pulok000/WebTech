@@ -58,19 +58,7 @@
 	border-style: solid;
     border-width: thin;
 	} 
- 	
-	#nav
-	{
-	float: left;
-	border-style: solid; 
-	border-width: thin;
-	height: 50%;
-	}
-	#content
-	{
-	 float: left;
-	 border-style: solid;
-	 border-width: thin;
-	 width: 611px;
-	 height: 50%
-	}
+
+
+
+

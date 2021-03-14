@@ -3,7 +3,7 @@
 
 
  		
-				<?php include "../header1.php" ?>
+				<?php include "header1.php" ?>
 
 				<div style="height: 500px">
 
@@ -18,7 +18,7 @@
 
 		
 		<?php
-		 include ('../footer.php');
+		 include ('footer.php');
 		?>
 		
 
