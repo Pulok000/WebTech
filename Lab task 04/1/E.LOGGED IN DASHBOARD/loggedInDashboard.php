@@ -3,7 +3,7 @@
 
 <div id="containersDiv">
 			<div >
-				<?php include ('header2.php');?>
+				<?php include ('../header2.php');?>
 
 			</div>
 
@@ -12,7 +12,7 @@
  		
 				
 			<div  id="nav">
-			<?php include ('nav.php');?>
+			<?php include ('../nav.php');?>
 			</div>
 
 
@@ -38,7 +38,7 @@
 
 			<div style="clear:both">
 				
-				<?php include ('C:\xampp\htdocs\LabTaskUplaod\WebTech\Lab task 03\Lab task 04\1\footer.php');?>
+				<?php include ('../footer.php');?>
 
 			</div>
 

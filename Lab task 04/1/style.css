@@ -1,10 +1,11 @@
 
 	#containersDiv
 	{
-		width: 800px;
-		height: 800px;
-		margin-left: auto;
-		margin-right: auto;
+	width: 800px;
+	/*height: 800px;*/
+
+	margin-left: auto;
+	margin-right: auto;
 
 
 	border-style: solid;
@@ -18,11 +19,14 @@
 	#headerDiv
 	{
 	display: block;
-	width: 800px;
-	height: 800px;  
-	position: absolute; 
-	padding-top:20px; 
-	padding-bottom:20px; 
+	width: 800px; 
+
+
+	margin-left: auto;
+	margin-right: auto;
+
+
+
 
 	font-size:20px; 
 	border-style: solid;
@@ -33,23 +37,19 @@
 
 	#headerBarDiv
 	{
-		display: inline;
-		position: absolute;
-		right: 45px;
-		/*margin-right: auto;*/
-		padding-top:20px; 
-		padding-bottom:25px; 
+	float:right;
+	display: inline;
 
-
+	margin-left: auto;
+	margin-right: auto;
 
 	}
 
 	#footerdiv{ 
 	width: 800px; 
-	height: 800px; 
 	bottom: 0px; 
 
-	position: absolute; 
+	position: static; 
 	padding-top:10px; 
 	padding-bottom:10px; 
 	text-align:center; 

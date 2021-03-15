@@ -129,7 +129,7 @@
 		<br>
 		<br>
 		<input type="submit" name="fsubmit" value="Submit">
-		<a href="forgetPass.php">Forget password?</a>
+		<a href="../D.FORGOT PASSWORD/forgetPassword.php">Forget password?</a>
 	</form>
 
 </fieldset>
