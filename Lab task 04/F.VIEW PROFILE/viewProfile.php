@@ -1,23 +1,23 @@
 
-<?php
-session_start();
-$dir='C:\\xampp\\htdocs\\LabTaskUplaod\\WebTech\\Lab task 03\\Lab task 04\\1\\H.PROFILE PICTURE\\'.$_SESSION["picture"];
 
-?>
 
 
 <div id="containersDiv">
 			<div >
-				<?php include ('header2.php');?>
+				<?php include ('../header2.php');?>
 
 			</div>
 
+<?php
 
+$dir='../H.PROFILE PICTURE/'.$_SESSION["picture"];
+
+?>
 
  		
 				
 			<div  id="nav">
-			<?php include ('nav.php');?>
+			<?php include ('../nav.php');?>
 			</div>
 
 
@@ -53,8 +53,8 @@ $dir='C:\\xampp\\htdocs\\LabTaskUplaod\\WebTech\\Lab task 03\\Lab task 04\\1\\H.
 						<label for="name";">Date of Birth :</label> <?php echo $_SESSION["fdob"]; ?>
 
 						<hr align=center  size=1>
-						<a href="C:\xampp\htdocs\LabTaskUplaod\WebTech\Lab task 03\Lab task 04\1\H.PROFILE PICTURE\profilePicture.php" style="float: right;">Change </a>
-						<a href="C:\xampp\htdocs\LabTaskUplaod\WebTech\Lab task 03\Lab task 04\1\H.PROFILE PICTURE\profilePicture.php" > Edit Profile </a>
+						<a href="../H.PROFILE PICTURE/profilePicture.php" style="float: right;">Change </a>
+						<a href="../H.PROFILE PICTURE/profilePicture.php" > Edit Profile </a>
 
 					
 
@@ -65,7 +65,7 @@ $dir='C:\\xampp\\htdocs\\LabTaskUplaod\\WebTech\\Lab task 03\\Lab task 04\\1\\H.
 
 			<div style="clear:both">
 				
-				<?php include ('C:\xampp\htdocs\LabTaskUplaod\WebTech\Lab task 03\Lab task 04\1\footer.php');?>
+				<?php include ('../footer.php');?>
 
 			</div>
 

@@ -1,8 +1,8 @@
 
 	#containersDiv
 	{
-	width: 800px;
-	/*height: 800px;*/
+	width: 900px;
+	/*height: 900px;*/
 
 	margin-left: auto;
 	margin-right: auto;
@@ -64,7 +64,8 @@
 	float: left;
 	border-style: solid; 
 	border-width: thin;
-	height: 900px;
+	height: 50%;
+	/*height: 500px;*/
 	}
 	#content
 	{
@@ -72,5 +73,6 @@
 	 border-style: solid;
 	 border-width: thin;
 	 width: 611px;
-	 height: 100px;
+	 height: 50%
+	 /*height: 500px;*/
 	}

@@ -26,7 +26,7 @@
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 
-$_SESSION['picture'] = "\";
+$_SESSION['picture'] = "\\";
 
 
 $uploadOk = 1;
