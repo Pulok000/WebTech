@@ -1,7 +1,7 @@
 
 <div id="containersDiv">
 			<div >
-				<?php include ('../header2.php');?>
+				<?php include ('../Asset/header2.php');?>
 
 			</div>
 
@@ -9,12 +9,12 @@
 
  		
 				
-			<div  id="nav">
-			<?php include ('../nav.php');?>
+			<div  id="nav" style="height: 500px">
+			<?php include ('../Asset/nav.php');?>
 			</div>
 
 
-			<div id="content">
+			<div id="content" style="height: 500px">
 
 			
 					<?php include ('index.php');?>
@@ -24,7 +24,7 @@
 
 			<div style="clear:both">
 				
-				<?php include ('../footer.php');?>
+				<?php include ('../Asset/footer.php');?>
 
 			</div>
 

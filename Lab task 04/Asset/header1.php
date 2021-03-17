@@ -2,12 +2,12 @@
 <html>
 <head>
 
-<link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="stylesheet" type="text/css" href="../Asset/style.css">
 
 </head>
 <body>
 		<div id="headerDiv">
-				<img src="../logo.png" style="display: inline;">
+				<img src="../Asset/logo.png" style="display: inline;">
 
 			<div id="headerBarDiv"> 
 

@@ -2,7 +2,7 @@
 
 <div id="containersDiv">
 
- 		<?php include ('../header1.php');?>
+ 		<?php include ('../Asset/header1.php');?>
 				
 
 				<div style="height: 500px">
@@ -18,7 +18,7 @@
 
 		
 		<?php
-		 include ('../footer.php');
+		 include ('../Asset/footer.php');
 		?>
 		
 

@@ -4,7 +4,7 @@
 
 <div id="containersDiv">
 			<div >
-				<?php include ('../header2.php');?>
+				<?php include ('../Asset/header2.php');?>
 
 			</div>
 
@@ -17,7 +17,7 @@ $dir='../H.PROFILE PICTURE/'.$_SESSION["picture"];
  		
 				
 			<div  id="nav">
-			<?php include ('../nav.php');?>
+			<?php include ('../Asset/nav.php');?>
 			</div>
 
 
@@ -65,7 +65,7 @@ $dir='../H.PROFILE PICTURE/'.$_SESSION["picture"];
 
 			<div style="clear:both">
 				
-				<?php include ('../footer.php');?>
+				<?php include ('../Asset/footer.php');?>
 
 			</div>
 

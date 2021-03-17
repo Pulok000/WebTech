@@ -1,7 +1,7 @@
 
 <div id="containersDiv">
 
- 		<?php include ('../header1.php');?>
+ 		<?php include ('../Asset/header1.php');?>
 				
 
 				<div >
@@ -17,7 +17,7 @@
 
 		
 		<?php
-		 include ('../footer.php');
+		 include ('../Asset/footer.php');
 		?>
 		
 
