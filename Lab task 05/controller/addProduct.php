@@ -2,11 +2,11 @@
 require_once '../model.php';
 
 
-if (isset($_POST['createStudent'])) {
+if (isset($_POST['addProduct'])) {
 	$data['name'] = $_POST['name'];
 	$data['surname'] = $_POST['surname'];
 	$data['username'] = $_POST['username'];
-	$data['password'] = password_hash($_POST['password'], PASSWORD_BCRYPT, ["cost" => 12]);
+	//$data['password'] = password_hash($_POST['password'], PASSWORD_BCRYPT, ["cost" => 12]);
 	$data['image'] = basename($_FILES["image"]["name"]);
 
 	$target_dir = "../uploads/";

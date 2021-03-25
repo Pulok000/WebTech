@@ -14,16 +14,16 @@ $students = fetchAllStudents();
 <table>
 	<thead>
 		<tr>
-			<th>Name</th>
-			<th>Surname</th>
-			<th>Username</th>
-			<th>Password</th>
-			<th>Image</th>
+			<th>title</th>
+			<th>image</th>
+			<th>catagory</th>
+			<th>describtion</th>
+			<th>audience</th>
 			<th>Action</th>
 		</tr>
 	</thead>
 	<tbody>
-		<?php foreach ($students as $i => $student): ?>
+		<?php foreach ($products as $i => $product): ?>
 			<tr>
 				<td><a href="showStudent.php?id=<?php echo $student['ID'] ?>"><?php echo $student['Name'] ?></a></td>
 				<td><?php echo $student['Surname'] ?></td>

@@ -3,10 +3,10 @@
 require_once 'model.php';
 
 function fetchAllStudents(){
-	return showAllStudents();
+	return showAllProducts();
 
 }
 function fetchStudent($id){
-	return showStudent($id);
+	return showProduct($id);
 
 }
