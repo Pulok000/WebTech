@@ -47,16 +47,26 @@ function showProduct($id){
 
 function addProduct($data){
 	$conn = db_conn();
+<<<<<<< HEAD
     $selectQuery = "INSERT into productinfo (title, image, catagory, description)
 VALUES (:title, :image, :catagory, :description)";
+=======
+    $selectQuery = "INSERT into productinfo (title, image, catagory, describtion, audience)
+VALUES (:title, :image, :catagory, :describtion, :audience)";
+>>>>>>> 68fe5d3b4addb804ec6431719e1eea17ad15bdb0
     try{
         $stmt = $conn->prepare($selectQuery);
         $stmt->execute([
         	':title' => $data['title'],
         	':image' => $data['image'],
         	':catagory' => $data['catagory'],
+<<<<<<< HEAD
         	':description' => $data['description']
         	//':audience' => $data['audience']
+=======
+        	':describtion' => $data['describtion'],
+        	':audience' => $data['audience']
+>>>>>>> 68fe5d3b4addb804ec6431719e1eea17ad15bdb0
         ]);
     }catch(PDOException $e){
         echo $e->getMessage();

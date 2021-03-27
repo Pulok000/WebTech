@@ -19,16 +19,28 @@
   <label for="description">Description:</label><br>
 
   <br>
+<<<<<<< HEAD
 <textarea rows="4" cols="50" name="description" form="productinfoform" name = "description">
 Enter text here...</textarea>
   <br>
 
 <!--   <label for="male">Distributor</label>
+=======
+<textarea rows="4" cols="50" name="comment" form="productinfoform">
+Enter text here...</textarea>
+  <br>
+
+  <label for="male">Distributor</label>
+>>>>>>> 68fe5d3b4addb804ec6431719e1eea17ad15bdb0
 
   <input type="Checkbox" id="distributor" name="distributor" value="Distributor">
   <label for="female">Customer</label>
   <input type="Checkbox" id="customer" name="Customer" value="Customer">
+<<<<<<< HEAD
  -->
+=======
+
+>>>>>>> 68fe5d3b4addb804ec6431719e1eea17ad15bdb0
  <br>
  <br>
 

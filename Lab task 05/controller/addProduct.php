@@ -3,11 +3,17 @@ require_once '../model.php';
 
 
 if (isset($_POST['addProduct'])) {
+<<<<<<< HEAD:Lab task 05/controller/addProduct.php
 	$data['title'] = $_POST['title'];
 	// $data['image'] = $_POST['image'];
 	$data['catagory'] = $_POST['catagory'];
 	$data['description'] = $_POST['description'];
 	//$data['username'] = $_POST['username'];
+=======
+	$data['name'] = $_POST['name'];
+	$data['surname'] = $_POST['surname'];
+	$data['username'] = $_POST['username'];
+>>>>>>> 68fe5d3b4addb804ec6431719e1eea17ad15bdb0:Lab task 05/controller/createStudent.php
 	//$data['password'] = password_hash($_POST['password'], PASSWORD_BCRYPT, ["cost" => 12]);
 	$data['image'] = basename($_FILES["image"]["name"]);
 
