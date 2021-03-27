@@ -19,16 +19,16 @@
   <label for="description">Description:</label><br>
 
   <br>
-<textarea rows="4" cols="50" name="comment" form="productinfoform">
+<textarea rows="4" cols="50" name="description" form="productinfoform" name = "description">
 Enter text here...</textarea>
   <br>
 
-  <label for="male">Distributor</label>
+<!--   <label for="male">Distributor</label>
 
   <input type="Checkbox" id="distributor" name="distributor" value="Distributor">
   <label for="female">Customer</label>
   <input type="Checkbox" id="customer" name="Customer" value="Customer">
-
+ -->
  <br>
  <br>
 

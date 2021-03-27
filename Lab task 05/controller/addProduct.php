@@ -3,9 +3,11 @@ require_once '../model.php';
 
 
 if (isset($_POST['addProduct'])) {
-	$data['name'] = $_POST['name'];
-	$data['surname'] = $_POST['surname'];
-	$data['username'] = $_POST['username'];
+	$data['title'] = $_POST['title'];
+	// $data['image'] = $_POST['image'];
+	$data['catagory'] = $_POST['catagory'];
+	$data['description'] = $_POST['description'];
+	//$data['username'] = $_POST['username'];
 	//$data['password'] = password_hash($_POST['password'], PASSWORD_BCRYPT, ["cost" => 12]);
 	$data['image'] = basename($_FILES["image"]["name"]);
 
@@ -18,7 +20,7 @@ if (isset($_POST['addProduct'])) {
     echo "Sorry, there was an error uploading your file.";
   }
 
-  if (addStudent($data)) {
+  if (addProduct($data)) {
   	echo 'Successfully added!!';
   }
 } else {

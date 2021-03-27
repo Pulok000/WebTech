@@ -2,11 +2,11 @@
 
 require_once 'model.php';
 
-function fetchAllStudents(){
+function fetchAllProducts(){
 	return showAllProducts();
 
 }
-function fetchStudent($id){
+function fetchProduct($id){
 	return showProduct($id);
 
 }
