@@ -20,12 +20,11 @@
 
 			<br>
 
-					<?php
 					
+					
+					<?php include ('../showAllProducts.php');?>
 
-
-					echo 'Welcome ' . $_SESSION["fname"] .'';
-					?>
+					
 
 					<!-- &nbsp 	<p><b>&nbsp&nbsp&nbsp&nbsp Welcome Bob</b></p> -->
 			</div>

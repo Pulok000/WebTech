@@ -11,69 +11,19 @@
 
  		
 				
-			<div  id="nav">
+			<div  id="nav"style="height: 500px">
 			<?php include ('nav.php');?>
 			</div>
 
 
-			<div id="content">
+			<div id="content"style="height: 500px">
 <p> <b> <u>ADD Product for sell:</u> </b></p>
 					<!-- <center>  -->
 
 
-				<form action="upload.php" method="post" enctype="multipart/form-data">
-					<br>
-
-					Title :	
-					<textarea name="discribtion" rows="5" cols="5"></textarea> 
 
 
-
-
-					<br>
-				 Image:
-
-				  <input type="file" name="fileToUpload" id="fileToUpload"> <br>
-				  
-
-			<br>
-
-				<label for="cars">Catagory:</label>
-				  <select name="cars" id="cars">
-				    <option value="volvo">Fruits</option>
-				    <option value="saab">vagetable</option>
-				    <option value="opel">random product</option>
-				    <option value="audi">none</option>
-				  </select>
-				
-				
-				<br>
-		
-  			
-
-			<p>Add description:</p>	
-				<!-- <label for="title">Add description: </label> -->
-
-
-					<textarea name="discribtion" rows="5" cols="5"></textarea> <br>
-
-					Audience:
-					<label for="male">Distributor</label>
-					  <input type="Checkbox" id="distributor" name="gender" value="Distributor">
-					  <label for="female">Customer</label>
-					  <input type="Checkbox" id="female" name="Customer" value="Customer">
-					  
-				
-				<br>
-
-				<br>
-
-				<input type="submit" value="Submit" name="submit">
-
-				</form>
-
-
-
+<?php include ('../sellProduct.php');?>
 				
 
 

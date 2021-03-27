@@ -19,7 +19,7 @@
   <label for="description">Description:</label><br>
 
   <br>
-<<<<<<< HEAD
+
 <textarea rows="4" cols="50" name="description" form="productinfoform" name = "description">
 Enter text here...</textarea>
   <br>
@@ -38,13 +38,11 @@ Enter text here...</textarea>
   <input type="Checkbox" id="customer" name="Customer" value="Customer">
 <<<<<<< HEAD
  -->
-=======
 
->>>>>>> 68fe5d3b4addb804ec6431719e1eea17ad15bdb0
  <br>
  <br>
 
-  <input type="submit" name = "addProduct" value="Create">
+  <input type="submit" name = "addProduct" value="Add">
   <input type="reset"> 
 </form> 
 

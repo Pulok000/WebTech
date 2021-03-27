@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `user_info`
 --
 
-CREATE TABLE `user_info` (
+CREATE TABLE `productinfo` (
   `ID` int(11) NOT NULL,
   `Name` varchar(40) NOT NULL,
   `Surname` varchar(40) NOT NULL,
@@ -41,7 +41,7 @@ CREATE TABLE `user_info` (
 -- Dumping data for table `user_info`
 --
 
-INSERT INTO `user_info` (`ID`, `Name`, `Surname`, `Username`, `Password`, `image`) VALUES
+INSERT INTO `productinfo` (`ID`, `Name`, `Surname`, `Username`, `Password`, `image`) VALUES
 (2, 'James', 'Hannigan', 'jimmy', '12345', NULL),
 (3, 'jim1', 'jim', 'jim1', 'jim1', NULL),
 (4, 'jim2', 'jim', 'jim2', 'jim2', NULL);
@@ -53,7 +53,7 @@ INSERT INTO `user_info` (`ID`, `Name`, `Surname`, `Username`, `Password`, `image
 --
 -- Indexes for table `user_info`
 --
-ALTER TABLE `user_info`
+ALTER TABLE `productinfo`
   ADD PRIMARY KEY (`ID`);
 
 --
@@ -63,7 +63,7 @@ ALTER TABLE `user_info`
 --
 -- AUTO_INCREMENT for table `user_info`
 --
-ALTER TABLE `user_info`
+ALTER TABLE `productinfo`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 

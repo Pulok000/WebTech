@@ -17,7 +17,7 @@ function showAllProducts(){
 
 function showProduct($id){
 	$conn = db_conn();
-	$selectQuery = "SELECT * FROM `productinfo` where ID = ?";
+	$selectQuery = "SELECT * FROM `productinfo` where id = ?";
 
     try {
         $stmt = $conn->prepare($selectQuery);
@@ -47,26 +47,22 @@ function showProduct($id){
 
 function addProduct($data){
 	$conn = db_conn();
-<<<<<<< HEAD
+// <<<<<<< HEAD
     $selectQuery = "INSERT into productinfo (title, image, catagory, description)
 VALUES (:title, :image, :catagory, :description)";
-=======
-    $selectQuery = "INSERT into productinfo (title, image, catagory, describtion, audience)
-VALUES (:title, :image, :catagory, :describtion, :audience)";
->>>>>>> 68fe5d3b4addb804ec6431719e1eea17ad15bdb0
+
+    $selectQuery = "INSERT into productinfo (title, image, catagory, description)
+VALUES (:title, :image, :catagory, :description)";
+
     try{
         $stmt = $conn->prepare($selectQuery);
         $stmt->execute([
         	':title' => $data['title'],
         	':image' => $data['image'],
         	':catagory' => $data['catagory'],
-<<<<<<< HEAD
+
         	':description' => $data['description']
-        	//':audience' => $data['audience']
-=======
-        	':describtion' => $data['describtion'],
-        	':audience' => $data['audience']
->>>>>>> 68fe5d3b4addb804ec6431719e1eea17ad15bdb0
+
         ]);
     }catch(PDOException $e){
         echo $e->getMessage();
