@@ -1,28 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
 
-
-
-<div id="containersDiv">
-			<div >
-				<?php include ('header2.php');?>
-
-			</div>
-
-
-
- 		
-				
-			<div  id="nav"style="height: 500px">
-			<?php include ('nav.php');?>
-			</div>
-
-
-			<div id="content"style="height: 500px">
-<p> <b> <u>ADD Product for sell:</u> </b></p>
-					<!-- <center>  -->
-
-
-
- <form action="../controller/addProduct.php" method="POST" enctype="multipart/form-data" id="productinfoform">
+ <form action="/..controller/addProduct.php" method="POST" enctype="multipart/form-data" id="productinfoform">
   <label for="name">title:</label><br>
 
   <input type="text" id="ftitle" name="title"><br><br> 
@@ -62,29 +45,7 @@ Enter text here...</textarea>
   <input type="submit" name = "addProduct" value="Add">
   <input type="reset"> 
 </form> 
-				
 
+</body>
+</html>
 
-					<!-- </center> -->
-
-
-
-				
-
-			<br>
-
-				
-
-					<!-- &nbsp 	<p><b>&nbsp&nbsp&nbsp&nbsp Welcome Bob</b></p> -->
-			</div>
-
-
-
-			<div style="clear:both">
-				
-				<?php include ('footer.php');?>
-
-			</div>
-
-
-</div>

@@ -73,21 +73,21 @@ VALUES (:title, :image, :catagory, :description)";
 }
 
 
-// function updateStudent($id, $data){
-//     $conn = db_conn();
-//     $selectQuery = "UPDATE user_info set Name = ?, Surname = ?, Username = ? where ID = ?";
-//     try{
-//         $stmt = $conn->prepare($selectQuery);
-//         $stmt->execute([
-//         	$data['name'], $data['surname'], $data['username'], $id
-//         ]);
-//     }catch(PDOException $e){
-//         echo $e->getMessage();
-//     }
+function updateProduct($id, $data){
+    $conn = db_conn();
+    $selectQuery = "UPDATE productinfo set title = ?,catagory = ? description = ? where ID = ?";
+    try{
+        $stmt = $conn->prepare($selectQuery);
+        $stmt->execute([
+        	$data['title'], $data['catagory'], $data['description'], $id
+        ]);
+    }catch(PDOException $e){
+        echo $e->getMessage();
+    }
     
-//     $conn = null;
-//     return true;
-// }
+    $conn = null;
+    return true;
+}
 
 // function deleteStudent($id){
 // 	$conn = db_conn();

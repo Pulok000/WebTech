@@ -22,7 +22,7 @@
 
 
 
- <form action="../J.DATABASE/addProduct.php" method="POST" enctype="multipart/form-data" id="productinfoform">
+ <form action="../J.DATABASE/controller/addProduct.php" method="POST" enctype="multipart/form-data" id="productinfoform">
   <label for="name">title:</label><br>
 
   <input type="text" id="ftitle" name="title"><br><br> 

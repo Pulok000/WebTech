@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>lab task 2.2</title>
+	<title>forget password</title>
 
 	<style type="text/css">
 

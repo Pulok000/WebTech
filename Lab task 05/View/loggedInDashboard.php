@@ -22,7 +22,7 @@
 
 					
 					
-					<?php include ('../showAllProducts.php');?>
+					<?php include ('showAllProducts.php');?>
 
 					
 

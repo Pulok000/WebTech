@@ -1,5 +1,5 @@
 <?php  
-require_once 'controller/productInfo.php';
+require_once '../controller/productInfo.php';
 
 $products = fetchAllProducts();
 
@@ -20,7 +20,7 @@ $products = fetchAllProducts();
 
 						     <br>
 						
-							<!-- <a href="showProduct.php?id=<?php //echo $product['id'] ?>"><?php// echo $product['title'] ?></a> -->
+							<!-- <a href="showProduct.php?id=<?php //echo $product['id'] ?>"><?php //echo $product['title'] ?></a> -->
 						   Title: <?php echo $product['title'] ?>
 						   <br>
 						    <br>
