@@ -24,8 +24,7 @@ if (isset($_POST['addProduct'])) {
 	if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file) && addProduct($data) ) 
 	{
 
-
-		//echo '<script type="text/javascript">window.location = " .../E.LOGGED IN DASHBOARD/loggedInDashboard.php"</script>';
+		header('Location: ../../E.LOGGED IN DASHBOARD/showAllProducts.php?id=' . $_POST["id"]);
     } 
   	else 
   	{

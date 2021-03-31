@@ -120,7 +120,7 @@
 		<input type="text" name="fname">
 		<span class="error"><?php echo $errname;?></span><br>
 		<label for="fpassword">Password :</label> 
-		<input type="text" name="fpass">
+		<input type="Password" name="fpass">
 		<span class="error"><?php echo $errpass;?></span> 
 		<hr align=center  size=1>
 

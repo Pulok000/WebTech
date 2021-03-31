@@ -38,9 +38,7 @@ $product = fetchProduct($_GET['id']);
   <label for="name">title:</label><br>
   <input value="<?php echo $product['title'] ?>" type="text" id="title" name="title"><br><br> 
 
-<!-- 
-<br /><b>Notice</b>:  Undefined variable: product in <b>C:\xampp\htdocs\LabTaskUplaod\WebTech\Lab task 03\Lab task 05\J.DATABASE\editProduct.php</b> on line <b>39</b><br />
- -->
+
 
   <input type="file" name="image"><br><br>
   <input type="hidden" name="id" value="<?php echo $_GET['id'] ?>">

@@ -15,10 +15,10 @@
 			<?php include ('../Asset/nav.php');?>
 			</div>
 
-
+<center> 
 			<div id="content"style="height: 500px">
 <p> <b> <u>ADD Product for sell:</u> </b></p>
-					<!-- <center>  -->
+					
 
 
 
@@ -65,7 +65,6 @@ Enter text here...</textarea>
 				
 
 
-					<!-- </center> -->
 
 
 
@@ -80,6 +79,7 @@ Enter text here...</textarea>
 
 
 
+					</center>
 			<div style="clear:both">
 				
 				<?php include ('../Asset/footer.php');?>
