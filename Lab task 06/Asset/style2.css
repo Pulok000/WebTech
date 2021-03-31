@@ -1,0 +1,78 @@
+
+	#containersDiv
+	{
+	width: 900px;
+	/*height: 900px;*/
+
+	margin-left: auto;
+	margin-right: auto;
+
+
+	border-style: solid;
+    border-width: thin;
+	}
+	
+
+
+
+
+	#headerDiv
+	{
+	display: block;
+	width: 800px; 
+
+
+	margin-left: auto;
+	margin-right: auto;
+
+
+
+
+	font-size:20px; 
+	border-style: solid;
+    border-width: thin;
+	}
+
+
+
+	#headerBarDiv
+	{
+	float:right;
+	display: inline;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	}
+
+	#footerdiv{ 
+	width: 800px; 
+	bottom: 0px; 
+
+	position: static; 
+	padding-top:10px; 
+	padding-bottom:10px; 
+	text-align:center; 
+	font-size:20px; 
+
+	border-style: solid;
+    border-width: thin;
+	} 
+ 	
+	#nav
+	{
+	float: left;
+	border-style: solid; 
+	border-width: thin;
+	height: 50%;
+	/*height: 500px;*/
+	}
+	#content
+	{
+	 float: left;
+	 border-style: solid;
+	 border-width: thin;
+	 width: 611px;
+	 height: 50%
+	 /*height: 500px;*/
+	}
