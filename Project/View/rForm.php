@@ -1,11 +1,8 @@
 <?php
-// Start the session
+
 session_start();
 
-
 ?>
-
-
 
 <!DOCTYPE html>
 <html>
@@ -39,14 +36,20 @@ session_start();
 </head>
 <body>
 
+<div id="containersDiv">
+
+    <?php include ('../Asset/header1.php');?>
+        
+
+  <div >
 
 
   <?php
-     include ('Control/cFormValidation.php');
+     include ('../Control/rFormValidation.php');
     ?>
 
   <?php
-     include ('Control/cInsertJsonData.php');
+     include ('../Control/rInsertJsonData.php');
     ?>
 
 
@@ -127,6 +130,15 @@ session_start();
 
 
 
+        </div>
+
+    
+    <?php
+     include ('../Asset/footer.php');
+    ?>
+    
+
+</div>
 
 
 

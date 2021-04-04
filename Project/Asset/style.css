@@ -61,4 +61,24 @@
 
 
 
+#labelForLogin
+{
+	width: 100px;
+	display: inline-block;
+	text-align: left;
+	
+}
+
+.error
+{
+	color: red;
+}
+
+#page {
+position: static;
+top: 50%;
+left: 50%;
+}
+
+
 

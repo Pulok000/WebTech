@@ -41,12 +41,24 @@ session_start();
 
 
 
-  <?php
-     include ('./Control/cFormValidation.php');
+
+
+
+<div id="containersDiv">
+
+    <?php include ('../Asset/header1.php');?>
+        
+
+      <div >
+
+
+
+   <?php
+     include ('Control/cFormValidation.php');
     ?>
 
   <?php
-     include ('./Control/cInsertJsonData.php');
+     include ('Control/cInsertJsonData.php');
     ?>
 
 
@@ -128,6 +140,17 @@ session_start();
 
 
 
+
+
+        </div>
+
+    
+    <?php
+     include ('../Asset/footer.php');
+    ?>
+    
+
+</div>
 
 
 
