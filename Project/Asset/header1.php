@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="../Asset/style.css">
 
 </head>
 <body>
@@ -11,9 +11,9 @@
 
 			<div id="headerBarDiv"> 
 
-					<a href="../A.PUBLIC HOME/home.php ">home |</a>
-					<a href="../C.LOGIN/login.php">Login |</a>
-					<a href="../B.REGISTRATION/registration.php"">Registration</a>
+					<a href="../view/home.php ">home |</a>
+					<a href="../view/login.php">Login |</a>
+					<a href="../view/rForm.php"">Registration</a>
 
 			</div> 
 

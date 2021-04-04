@@ -23,7 +23,7 @@
                                
                           </tr>  
                           <?php   
-                          $data = file_get_contents("data.json");  
+                          $data = file_get_contents("../model/data.json");  
                           $data = json_decode($data, true);  
                           foreach($data as $row)  
                           {  

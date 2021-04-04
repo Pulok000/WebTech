@@ -7,9 +7,9 @@
 
 
 
-            if(file_exists('data.json'))  
+            if(file_exists('../model/data.json'))  
            {  
-                $current_data = file_get_contents('data.json');  
+                $current_data = file_get_contents('../model/data.json');  
                 $array_data = json_decode($current_data, true);  
                 $extra = array(  
                      'name'               =>     $name,  
