@@ -1,12 +1,7 @@
 
 <div id="containersDiv">
 
- 		<?php include ('../Asset/header1.php');?>
-				
-
-			
-
-
+ 		<?php include ('/Asset/header1.php');?>
     <div>
         
         <!DOCTYPE html>

@@ -1,11 +1,14 @@
+<?php
+session_start();
+?>
 
 
 <div id="containersDiv">
 
- 		<?php include ('../Asset/header1.php');?>
+ 		<?php include ('Asset/header1.php');?>
 				
 
-			
+
 
 
 <div>
@@ -15,7 +18,7 @@
 <fieldset style="width:400px">
 	<legend><h3>LOGIN</h3></legend> 
 
-	<form method="POST" action="../Control/loginValidation.php">
+	<form method="POST" action="control/loginValidation.php">
 		<label  id="labelForLogin" for="name">User Name :</label> 
 		<input type="text" name="fname"> 
 		<br>
@@ -30,7 +33,7 @@
 		<br>
 		<br>
 		<input type="submit" name="fsubmit" value="Submit">
-		<a href="../view/forgetPassword.php">Forget password?</a>
+		<a href="forgetPassword.php">Forget password?</a>
 	</form>
 
 </fieldset>
@@ -48,9 +51,16 @@
 
 		
 		<?php
-		 include ('../Asset/footer.php');
+		 include ('Asset/footer.php');
 		?>
 		
 
 </div>
 
+<?php
+if($_SERVER["REQUEST_METHOD"]=="POST")
+	{
+	$_SESSION["fname"]=$_POST["fname"];
+	}
+ 
+?>

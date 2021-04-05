@@ -1,5 +1,5 @@
 <?php  
-require_once '../J.DATABASE/Controller/productInfo.php';
+require_once 'control/productInfo.php';
 
 $products = fetchAllProducts();
 
@@ -24,7 +24,7 @@ $products = fetchAllProducts();
 						   Title: <?php echo $product['title'] ?>
 						   <br>
 						    <br>
-							<img width="100px" src="../J.DATABASE/uploads/<?php echo $product['image'] ?>" alt="<?php echo $product['title'] ?>">
+							<img width="100px" src="uploads/<?php echo $product['image'] ?>" alt="<?php echo $product['title'] ?>">
 							<br>
 							<br>
 							Catgory: <?php echo $product['catagory'] ?>
@@ -33,9 +33,9 @@ $products = fetchAllProducts();
 							<?php echo $product['description'] ?>
 							<br>
 
-							<a href="../J.DATABASE/editProduct.php?id=<?php echo $product['ID'] ?>">Edit</a>
+							<a href="editProduct.php?id=<?php echo $product['ID'] ?>">Edit</a>
 							&nbsp
-							<a href="../J.DATABASE/controller/deleteProduct.php?id=<?php echo $product['ID'] ?>">Delete</a>
+							<a href="control/deleteProduct.php?id=<?php echo $product['ID'] ?>">Delete</a>
 
 			</fieldset>
 

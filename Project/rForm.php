@@ -1,16 +1,13 @@
 <?php
-// Start the session
+
 session_start();
 
-
 ?>
-
-
 
 <!DOCTYPE html>
 <html>
 <head>
-  <title>lab task 2.1</title>
+
 
   <style type="text/css">
     label
@@ -39,26 +36,20 @@ session_start();
 </head>
 <body>
 
-
-
-
-
-
 <div id="containersDiv">
 
-    <?php include ('../Asset/header1.php');?>
+    <?php include ('Asset/header1.php');?>
         
 
-      <div >
+  <div >
 
 
-
-   <?php
-     include ('Control/cFormValidation.php');
+  <?php
+     include ('control/rFormValidation.php');
     ?>
 
   <?php
-     include ('Control/cInsertJsonData.php');
+     include ('control/rInsertJsonData.php');
     ?>
 
 
@@ -139,18 +130,16 @@ session_start();
 
 
 
-
-
-
         </div>
 
     
     <?php
-     include ('../Asset/footer.php');
+     include ('Asset/footer.php');
     ?>
     
 
 </div>
+
 
 
 

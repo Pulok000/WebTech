@@ -3,7 +3,7 @@
 
 <div id="containersDiv">
 			<div >
-				<?php include ('../Asset/header2.php');?>
+				<?php include ('Asset/header2.php');?>
 
 			</div>
 
@@ -12,7 +12,7 @@
  		
 				
 			<div  id="nav"style="height: 500px">
-			<?php include ('../Asset/nav.php');?>
+			<?php include ('Asset/nav.php');?>
 			</div>
 
 
@@ -22,7 +22,7 @@
 
 
 
- <form action="../control/addProduct.php" method="POST" enctype="multipart/form-data" id="productinfoform">
+ <form action="control/addProduct.php" method="POST" enctype="multipart/form-data" id="productinfoform">
   <label for="name">title:</label><br>
 
   <input type="text" id="ftitle" name="title"><br><br> 
@@ -82,7 +82,7 @@ Enter text here...</textarea>
 
 			<div style="clear:both">
 				
-				<?php include ('../Asset/footer.php');?>
+				<?php include ('Asset/footer.php');?>
 
 			</div>
 

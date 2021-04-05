@@ -1,8 +1,11 @@
 <?php
-
+// Start the session
 session_start();
 
+
 ?>
+
+
 
 <!DOCTYPE html>
 <html>
@@ -32,25 +35,29 @@ session_start();
 
 
 </style>
-
 </head>
 <body>
+
+
+
+
+
 
 <div id="containersDiv">
 
     <?php include ('../Asset/header1.php');?>
-        
 
-  <div >
+<div >
 
 
-  <?php
-     include ('../Control/rFormValidation.php');
+
+   <?php
+     include ('Control/cFormValidation.php');
     ?>
 
   <?php
-     include ('../Control/rInsertJsonData.php');
-    ?>
+     include ('Control/cInsertJsonData.php');
+  ?>
 
 
 
@@ -117,16 +124,13 @@ session_start();
 
 </fieldset>
 
-
-   
     <input type="submit" name="fsubmit" value="Submit">
     <input type="reset">
     
-  </form>
+</form>
 
 </fieldset>
 </div>
-
 
 
 
@@ -139,7 +143,6 @@ session_start();
     
 
 </div>
-
 
 
 
