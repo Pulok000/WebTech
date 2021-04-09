@@ -59,6 +59,21 @@ function showProduct($id){
 //     return $rows;
 // }
 
+function searchUser($user_name){
+    $conn = db_conn();
+    $selectQuery = "SELECT * FROM `user_info` WHERE username = ?";
+
+    
+    try {
+        $stmt = $conn->prepare($selectQuery);
+        $stmt->execute([$user_name]);
+    } catch (PDOException $e) {
+        echo $e->getMessage();
+    }
+    $data = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $data;
+}
+
 
 function addProduct($data){
     $conn = db_conn();
@@ -66,8 +81,6 @@ function addProduct($data){
     $selectQuery = "INSERT into productinfo (title, image, catagory, description)
 VALUES (:title, :image, :catagory, :description)";
 
-//     $selectQuery = "INSERT into productinfo (title, image, catagory, description)
-// VALUES (:title, :image, :catagory, :description)";
 
     try{
         $stmt = $conn->prepare($selectQuery);

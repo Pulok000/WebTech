@@ -32,7 +32,7 @@ session_start();
 		<input type="checkbox" name="frem">
 		<br>
 		<br>
-		<input type="submit" name="fsubmit" value="Submit">
+		<input type="submit" name="login" value="Submit">
 		<a href="forgetPassword.php">Forget password?</a>
 	</form>
 
@@ -57,35 +57,3 @@ session_start();
 
 </div>
 
-<?php
-if($_SERVER["REQUEST_METHOD"]=="POST")
-	{
-	$_SESSION["fname"]=$_POST["fname"];
-	}
- 
-?>
-
-<?php
-
-
-if($_SERVER["REQUEST_METHOD"]=="POST")
-{
-$checkName=$_POST["fname"];
-
-
-
-	function test_input($data)
-	{
-		$data = trim($data);
-		$data = stripslashes($data);
-		$data = htmlspecialchars($data);
-		return $data;
-    }
-
-
-$name=test_input($checkName);
-$_SESSION["fname"] = $name;
-}
-
-
-?>

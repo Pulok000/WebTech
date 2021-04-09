@@ -25,7 +25,7 @@ session_start();
 						
 					$user='Logged In as <a href=loggedInDashboard.php>'. $_SESSION["fname"]. '</a>';
 
-					echo $_SESSION["fname"];
+					//echo $_SESSION["fname"];
 
 
 					 echo $user; 
