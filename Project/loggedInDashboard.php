@@ -1,3 +1,16 @@
+<?php
+session_start(); 
+
+if(empty($_SESSION["fname"]))
+{
+header("Location:login.php");
+}
+
+?>
+
+<!DOCTYPE html>
+<html>
+<body>
 
 
 
@@ -20,13 +33,13 @@
 
 			<br>
 
+					<?php 
 					
-					
-					<?php include ('showAllProducts.php');?>
+					include ('showAllProducts.php');
 
 					
+					?>
 
-					<!-- &nbsp 	<p><b>&nbsp&nbsp&nbsp&nbsp Welcome Bob</b></p> -->
 			</div>
 
 
@@ -39,3 +52,6 @@
 
 
 </div>
+
+</body>
+</html>

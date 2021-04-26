@@ -12,9 +12,9 @@ if (isset($_POST['updateProduct'])) {
 	$target_file = $target_dir . basename($_FILES["image"]["name"]);
 
   if (updateProduct($_POST['id'], $data)) {
-  	echo 'Successfully updated!!';
-  	//redirect to showStudent
-  	header('Location: ../showProduct.php?id=' . $_POST["id"]);
+  	
+
+  	header('Location: ../loggedInDashboard.php');
   }
 } else {
 	echo 'You are not allowed to access this page.';

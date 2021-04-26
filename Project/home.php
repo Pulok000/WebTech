@@ -11,7 +11,7 @@
 					<br>
 					<br>
 
-					<p style="font-size:20px"><b>  &nbsp &nbsp &nbsp Welcome to xCompany</b></p>
+					<p style="font-size:20px"><b>  &nbsp &nbsp &nbsp Welcome to Banglarhat</b></p>
 
 
 				</div>

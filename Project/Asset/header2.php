@@ -1,3 +1,9 @@
+
+ <?php
+//session_start();
+?>  
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,9 +22,15 @@
 					
 					
 					<?php
-						session_start();
-					$user='Logged In as <a href=loggedInDashboard.php>'. $_SESSION["fname"]. '</a>';
+					//$_SESSION['uname']
+						
+					$user='Logged In as <a href=loggedInDashboard.php>'. $_SESSION['fname']. '</a>';
 
+					//echo $_SESSION['id'];
+					//$_SESSION['fname']
+					//echo $_SESSION['fname'];
+
+//$_SESSION['id']
 
 					 echo $user; 
 				
@@ -35,12 +47,3 @@
 		</div> 
 </body>
 </html>
-
-				
-
-
-
-
-
-
-

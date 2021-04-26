@@ -2,10 +2,8 @@
 
 require_once '../model.php';
 
-deleteproduct($_GET['id']);
-
-if (deleteproduct($_GET['id'])) {
-    header('Location: ../showAllProducts.php');
+if (deleteProduct($_GET['id'])) {
+    header('Location: ../loggedInDashboard.php');
 }
 
  ?>

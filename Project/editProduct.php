@@ -1,7 +1,17 @@
+<?php
+session_start(); 
+
+if(empty($_SESSION["fname"]))
+{
+header("Location:login.php");
+}
+
+?>
+
 <?php 
 
-require_once '/control/productInfo.php';
-$student = fetchProduct($_GET['id']);
+require_once 'control/productInfo.php';
+$product = fetchProduct($_GET['id']);
 
  ?>
 <!DOCTYPE html>
@@ -34,7 +44,7 @@ $student = fetchProduct($_GET['id']);
 
 
 
- <form action="/control/updateProduct.php" method="POST" enctype="multipart/form-data">
+ <form action="control/updateProduct.php" method="POST" enctype="multipart/form-data">
   <label for="name">title:</label><br>
   <input value="<?php echo $product['title'] ?>" type="text" id="title" name="title"><br><br> 
 

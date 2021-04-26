@@ -13,14 +13,9 @@ $products = fetchAllProducts();
 
 
 		<?php foreach ($products as $i => $product): ?>
-
-
 			<fieldset style="width:270px">
-				<!-- <legend><h3>NAME</h3></legend>  -->
 
-						     <br>
-						
-							<!-- <a href="showProduct.php?id=<?php //echo $product['id'] ?>"><?php //echo $product['title'] ?></a> -->
+						   <br>
 						   Title: <?php echo $product['title'] ?>
 						   <br>
 						    <br>
@@ -33,17 +28,13 @@ $products = fetchAllProducts();
 							<?php echo $product['description'] ?>
 							<br>
 
-							<a href="editProduct.php?id=<?php echo $product['ID'] ?>">Edit</a>
+							<a href="editProduct.php?id=<?php echo $product['id'] ?>">Edit</a>
 							&nbsp
-							<a href="control/deleteProduct.php?id=<?php echo $product['ID'] ?>">Delete</a>
+							<a href="control/deleteProduct.php?id=<?php echo $product['id'] ?>">Delete</a>
 
 			</fieldset>
 
-			
-		<?php endforeach; ?>
-
-
-
+		<?php endforeach; ?>	
 
 </body>
 </html>

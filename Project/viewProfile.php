@@ -1,23 +1,48 @@
 
+<?php
+session_start(); 
 
+if(empty($_SESSION["fname"]))
+{
+header("Location:login.php");
+}
+
+?>
 
 
 <div id="containersDiv">
-			<div >
-				<?php include ('Asset/header2.php');?>
 
-			</div>
+		<div >
+			<?php include ('Asset/header2.php');?>
+
+		</div>
+
+
+		<?php 
+		//session_start();
+		require_once 'model.php';
+
+		$data=showUserInfo($_SESSION['id']);
+		    //$id = $data["id"];
+		$name = $data["name"];
+		//$username = $data["username"];
+		$email = $data["email"];
+		$gender = $data["gender"];
+		$dob = $data["dob"];
+
+
+		 ?>
 
 <?php
 
-$dir='../view/'.$_SESSION["picture"];
+//$dir='../view/'.$_SESSION["picture"];
 
 ?>
 
  		
 				
 			<div  id="nav">
-			<?php include ('/Asset/nav.php');?>
+			<?php include ('Asset/nav.php');?>
 			</div>
 
 
@@ -25,14 +50,14 @@ $dir='../view/'.$_SESSION["picture"];
 
 			<br>
 					<fieldset style="width:550px;  ">
-						
+
 
 						<legend><h3>Profile</h3></legend> 
-						<label for="name";">Name :</label> <?php echo $_SESSION["fname"]; ?>
+						<label for="name";">Name :</label> <?php echo $name; ?>
 
 
 					
-							 <img src="<?php echo $dir ?>" alt="picture" width="70" height="70"/>
+						 <!-- <img src="<?php //echo $dir ?>" alt="picture" width="70" height="70"/> -->
 
 
 						<!-- <img src="" alt="picture"/> -->
@@ -42,15 +67,16 @@ $dir='../view/'.$_SESSION["picture"];
 
 						<hr align=center  size=1>
 
-						<label for="name";">Email :</label> <?php echo $_SESSION["femail"]; ?>
+
+						<label for="name";">Email :</label> <?php echo $email; ?>
 
 						<hr align=center  size=1>
 
-						<label for="name";">Gender :</label> <?php echo $_SESSION["fgender"]; ?>
+						<label for="name";">Gender :</label> <?php echo $gender ; ?>
 
 						<hr align=center  size=1>
 
-						<label for="name";">Date of Birth :</label> <?php echo $_SESSION["fdob"]; ?>
+						<label for="name";">Date of Birth :</label> <?php echo $dob ; ?>
 
 						<hr align=center  size=1>
 						<a href="../H.PROFILE PICTURE/profilePicture.php" style="float: right;">Change </a>
@@ -65,7 +91,7 @@ $dir='../view/'.$_SESSION["picture"];
 
 			<div style="clear:both">
 				
-				<?php include ('/Asset/footer.php');?>
+				<?php include ('Asset/footer.php');?>
 
 			</div>
 

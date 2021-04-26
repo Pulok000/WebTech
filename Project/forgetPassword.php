@@ -1,7 +1,7 @@
 
 <div id="containersDiv">
 
- 		<?php include ('/Asset/header1.php');?>
+ 		<?php include ('Asset/header1.php');?>
     <div>
         
         <!DOCTYPE html>
@@ -107,6 +107,6 @@ if($flag)
 
 
 		
-		<?php include ('../Asset/footer.php');?>
+		<?php include ('Asset/footer.php');?>
 
 </div>
