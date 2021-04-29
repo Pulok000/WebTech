@@ -1,0 +1,18 @@
+.buy{
+ width: 400px;
+      height: 520px;
+      color: #000;
+      top: 50%;
+      left:50%;
+      padding: 60px 30px;
+     position: absolute;
+      transform: translate(-50%,-50%);
+      box-sizing: border-box;
+      box-shadow: 8px 8px 50px #000;
+
+ }
+
+ >image img{
+
+ 	size: 500px 400px;
+ }

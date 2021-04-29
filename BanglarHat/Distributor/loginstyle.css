@@ -1,0 +1,171 @@
+body{
+
+	margin: 0;
+	padding: 0;
+	background-image: url(picture/high.jpg);
+	
+	-webkit-background-size:cover;
+	background-size: cover;
+	font-family: Poppins;
+
+
+
+}
+.logo{
+      height: 10px;
+      width: 1000px;
+      font-size: 20px;
+      font-style: bold;
+      font-weight: bold;
+      color: white;
+      margin: left 100px;
+}
+
+.logoimage{
+      height: 30px;
+      width: 120px;
+      margin: 4px;
+      border: 2px solid yellow;
+}
+
+
+.login{
+      width: 400px;
+      height: 520px;
+      color: #000;
+      top: 50%;
+      left:50%;
+      padding: 60px 30px;
+     position: absolute;
+      transform: translate(-50%,-50%);
+      box-sizing: border-box;
+      box-shadow: 8px 8px 50px #000;
+
+
+
+}
+
+h1{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 50px;
+	color: black;
+	text-align: center;
+	margin: button 8%;
+	font-family: Courgette;
+
+
+}
+
+.login input{
+	padding: 5px;
+	width: 100%;
+	margin-top-bottom:2px;
+
+}
+
+.login input[type=submit]{
+
+	border: none;
+	outline: none;
+	height: 40px;
+	background:#f6648b;
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+
+}
+.login input[submit]:hover{
+	cursor: pointer;
+}
+
+.login a{
+
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+	opacity: 0.8;
+
+}
+
+.login a:hover{
+	color: #fff;
+	opacity: 1;
+}
+
+.bottom-text{
+	color: #fff;
+}
+
+.bottom-text input{
+	width: 10%;
+	float: left;
+}
+
+
+
+
+.bottom-text a{
+	float: right;
+}
+
+#overlay-area{
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	z-index: -5;
+	height: 100%
+	width:100%;
+	top: 0;
+	bottom: 0;
+}
+
+.socials{
+	padding: 30px;
+
+}
+
+.socials a{
+	padding: 10px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 5%;
+    margin: 0 5px;
+
+}
+.socials a:nth-child(1){
+	background: blue;
+
+}
+.socials a:nth-child(2){
+	background:#55acee;
+
+}
+.socials a:nth-child(3){
+	background: #bd081c;
+
+}
+.socials a:nth-child(4){
+	background: #0077b5;
+
+}
+
+
+
+.login small{
+      width: 85%;
+      text-align:center;
+      position: absolute;
+      display: none;
+      color: red;
+      font-weight: bold;
+}
+
+.username{
+	padding-bottom: 5px;
+}
+.password{
+	padding-bottom: 5px;
+}
